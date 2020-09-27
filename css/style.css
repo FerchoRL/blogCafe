@@ -29,6 +29,10 @@ h2{
 	font-size: 4rem;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* Utilidades */
 .no-margin {
 	margin: 0;
@@ -72,4 +76,52 @@ h2{
 	color: white;
 	text-align: center;
 	margin-top: 5rem;
+}
+
+/* Contenido Principal Home */
+.contenido-principal{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.blog,
+.cursos {
+	/*No permite que crezcan o se hagan mas pequeño*/
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 100%
+}
+
+.cursos{
+	order: -1;
+}
+/* Media Queries Mobile First*/
+
+@media (min-width: 768px) {
+	.barra{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.navegacion a{
+		display: inline;
+		margin-right: 2rem;
+	}
+	.navegacion a:last-of-type {
+        margin: 0;
+    }
+    .texto-header{
+    	margin-top: 15rem;
+    }
+    .contenido-principal{
+    	justify-content: space-between;
+    }
+    .blog{
+    	flex-basis: 66.6%;
+    	order: -1;
+    }
+    .cursos{
+    	flex-basis: calc(33.3% - 4rem);
+
+    }
 }
