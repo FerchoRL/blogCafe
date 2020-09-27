@@ -36,7 +36,7 @@
 	<!--=========================================
 	=            Contenido-Principal            =
 	==========================================-->
-	<div class="contenido-principal contenido">
+	<div class="contenido-principal contenido contenedor">
 		<main class="blog">
 			<h2>Nuestro Blog</h2>
 			<!--Article-->
@@ -79,24 +79,42 @@
 			<ul class="cursos-lista">
 				<!--Curso-->
 				<li class="curso">
-					<h4>Tecnicas de extraccion de café</h4>
-					<p>Precio: <span>Gratis</span></p>
-					<p>Cupo: <span>20</span></p>
+					<h4 class="no-margin">Tecnicas de extraccion de café</h4>
+					<p class="no-margin">Precio: <span>Gratis</span></p>
+					<p class="no-margin">Cupo: <span>20</span></p>
 					<a href="cursos.php" class="btn btn-secundario">Más información</a>
 				</li>
 				<!--Curso-->
 				<li class="curso">
-					<h4>4 Recetas de cafe para principiantes</h4>
-					<p>Precio: <span>Gratis</span></p>
-					<p>Cupo: <span>20</span></p>
+					<h4 class="no-margin">4 Recetas de cafe para principiantes</h4>
+					<p class="no-margin">Precio: <span>Gratis</span></p>
+					<p class="no-margin">Cupo: <span>20</span></p>
 					<a href="cursos.php" class="btn btn-secundario">Más información</a>
 				</li>
 			</ul>
 		</aside>
 	</div>
-	
-	
 	<!--====  End of Contenido-Principal  ====-->
+
+	<!--============================
+	=            Footer            =
+	=============================-->
+	<footer class="site-footer">
+		<div class="contenedor">
+			<div class="barra">
+				<p class="no-margin">Blog <span>DeCafé</span></p>
+				<nav class="navegacion">
+					<a href="nosotros.php">Nosotros</a>
+					<a href="cursos.php">Cursos</a>
+					<a href="contacto.php">Contacto</a>
+				</nav>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<!--====  End of Footer  ====-->
+	
 	
 	
 	
